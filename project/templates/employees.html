@@ -1,0 +1,42 @@
+<!-- templates/employees.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  Employees
+</h1>
+<a href="{{ url_for('employee.create_employee') }}" class="button is-primary">Add Employee</a>
+
+<table class="table is-striped is-bordered is-hoverable">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>Address</th>
+      <th>Phone</th>
+      <th>Salary</th>
+      <th>Department</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for employee in employees %}
+    <tr>
+      <td>{{ employee.name }}</td>
+      <td>{{ employee.gender }}</td>
+      <td>{{ employee.address }}</td>
+      <td>{{ employee.phone }}</td>
+      <td>{{ employee.salary }}</td>
+      <td>{{ employee.department }}</td>
+      <td>
+        <a href="{{ url_for('employee.edit_employee', employee_id=employee.id) }}" class="button is-primary">Edit</a>
+        <form method="POST" action="{{ url_for('employee.delete_employee', employee_id=employee.id) }}" style="display: inline-block;">
+          <button class="button is-danger">Delete</button>
+        </form>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,54 @@
+<!-- templates/create_employee.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  Create Employee
+</h1>
+
+<form method="POST" action="{{ url_for('employee.create_employee') }}">
+  <div class="field">
+    <label class="label">Name</label>
+    <div class="control">
+      <input class="input" type="text" name="name" required>
+    </div>
+  </div>
+  <div class="field">
+    <label class="label">Gender</label>
+    <div class="control">
+      <input class="input" type="text" name="gender" required>
+    </div>
+  </div>
+  <div class="field">
+    <label class="label">Address</label>
+    <div class="control">
+      <input class="input" type="text" name="address" required>
+    </div>
+  </div>
+  <div class="field">
+    <label class="label">Phone</label>
+    <div class="control">
+      <input class="input" type="text" name="phone" required>
+    </div>
+  </div>
+  <div class="field">
+    <label class="label">Salary</label>
+    <div class="control">
+      <input class="input" type="text" name="salary" required>
+    </div>
+  </div>
+  <div class="field">
+    <label class="label">Department</label>
+    <div class="control">
+      <input class="input" type="text" name="department" required>
+    </div>
+  </div>
+  <div class="field">
+    <div class="control">
+      <button class="button is-primary" type="submit">Create</button>
+    </div>
+  </div>
+</form>
+{% endblock %}
+
