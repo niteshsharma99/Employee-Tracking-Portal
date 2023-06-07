@@ -40,9 +40,15 @@ source auth/bin/activate
 pip install flask flask-sqlalchemy flask-login
 
 **3. Export the Required Variable-**                                                        
-cd Employee-Tracking-Portal/project                                                                                                                               
+cd Employee-Tracking-Portal/project                                  
+
+For Linux System -                                                                        
 export FLASK_APP=.                                                                  
 export FLASK_DEBUG=1                                         
+
+For Windows System -                                                                                                                                               
+set FLASK_APP=.                                                                                                                                     
+set FLASK_DEBUG=1                                                                     
 
 **#If outside from project then run  **                                                 
 export FLASK_APP=project
@@ -52,7 +58,12 @@ cd Employee-Tracking-Portal/
 python3 dbcreate.py
 
 **5. Run the application**                                            
-cd Employee-Tracking-Portal/project                                                                        
+cd Employee-Tracking-Portal/project                                                                                                                               
+
+# For Winodws System                                                            
+flask --app _init_ run                                                                  
+
+For Linux users:                                                   
 flask run 
 
 **6. After running "flask run" Check the browser on localhost:**                                  
