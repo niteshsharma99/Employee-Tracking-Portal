@@ -39,6 +39,11 @@ python3 -m venv auth
 source auth/bin/activate                                                                           
 pip install flask flask-sqlalchemy flask-login
 
+For Windows                                                                                                                                                   
+python3 -m venv auth                                                                                                                             
+auth\Scripts\activate
+
+
 **3. Export the Required Variable-**                                                        
 cd Employee-Tracking-Portal/project                                  
 
