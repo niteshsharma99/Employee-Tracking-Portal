@@ -34,7 +34,7 @@ Steps to run this project:
 git clone https://github.com/niteshsharma99/Employee-Tracking-Portal.git
 
 **2. Enable Virtual Env in python -**                                                      
-cd Employee-Tracking-Portal/                                                                     
+cd Employee-Tracking-Portal/                                                                                                                                        For Linux - 
 python3 -m venv auth                                                                     
 source auth/bin/activate                                                                           
 pip install flask flask-sqlalchemy flask-login
