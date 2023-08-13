@@ -63,6 +63,9 @@ cd Employee-Tracking-Portal/project
 <!-- For Winodws System                                                             -->
 flask --app app run                                                            
 
+OR
+flask --app _init_ run
+
 For Linux users:                                                   
 flask run 
 
