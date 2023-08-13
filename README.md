@@ -61,7 +61,7 @@ python3 dbcreate.py
 cd Employee-Tracking-Portal/project                                                                                                                               
 
 <!-- For Winodws System                                                             -->
-flask --app _init_ run                                                                  
+flask --app app run                                                            
 
 For Linux users:                                                   
 flask run 
